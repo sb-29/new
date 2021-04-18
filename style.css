@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif} */
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/newbg.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/final2.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+
+}
+
+.content p{
+    font-size: 15px;
+    color: #656568;
+    
+}
+
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+    
+}
+
+.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1100px;
+    margin-left: 180px;
+    margin-right: 40px;
+}
+
+section .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+
+section .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+section .card:hover .box{
+    transform: rotateY(180deg);
+}
+
+section .card .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .card .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .card .box .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+section .card .box .contentBx div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg,#e6d926,#1919a1);
+    transform: translateZ(100px);
+}
+
+/* .w3-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+} */
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.card1{
+    width: 250px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 40px;
+    
+    background-position: center;
+    background-size: cover;
+    /*gap: 30px;*/
+    transition: transform 0.5s;
+}
+
+.card1:hover{
+    transform: translateY(-10px)
+}
+
+.card2{
+    background-image: url(images/img1.jpg);
+}
+
+.card3{
+    background-image: url(images/img2.jpg);
+}
+
+.card4{
+    background-image: url(images/img3.jpg);
+}
+.card5{
+    background-image: url(images/img4.jpg);
+}
