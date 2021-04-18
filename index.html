@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<!-- <style>
+
+
+</style> -->
+
+<body>
+
+<!-- //<div class="bg"></div> -->
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <!-- <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a> -->
+    <img src="images/logo.png" class="logo">
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#intellectual properties" class="w3-bar-item w3-button"><i class="fa fa-th"></i>INTELLECTUAL PROPERTIES</a>
+      <a href="#campus" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>JOIN</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#intellectual properties" onclick="w3_close()" class="w3-bar-item w3-button">INTELLECTUAL PROPERTIES</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">CRAFTIN IMAGES</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">CRAFTIN IMAGES</span><br>
+    <!-- <span class="w3-large" style="font-size: 30px;">PowerUp your Passion.</span> -->
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About Us</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="parallax">
+
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 60px; color: white; font-weight: bolder;">Welcome To Craftin Images</h1>
+  <p class="w3-center w3-large" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; color: aliceblue;" >Craftin Images is a 360 degree media company, providing various kinds of platforms for youth to showcase their talent and hence create a mark for themselves in the industry. We can also be called as a production house, producing all sorts of interesting content in the field of music, movies, fashion, marketing, food, sports etc. We are a team of like-minded creative people who love to think of new ideas every day and express it in the form of awesome content.</p>
+  <!-- <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div> -->
+</div>
+
+<!-- Promo Section - "We know design" -->
+<!-- <div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div> -->
+
+<h1 style="font-family: 'Times New Roman', Times, serif ; text-align: center; font-weight: bold; font-size: 60px; color: aliceblue;" id="intellectual properties" >Intellectual Properties</h1>
+<p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-weight: bold; color: aliceblue; font-size: 20px;">At Craftin Images, we strive to create unique and interesting platforms to showcase every creative talent.</p>
+<section >
+   <div class="card">
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/marketing.jpeg">
+            </div>
+            <div class="contentBx">
+                <div>
+                    <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">MARKETING</p>
+                    <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">The Strategist</h3>
+                    <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">A virtual platform for young marketing wizards to showcase their strategic abilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+     <div class="box">
+         <div class="imgBx">
+             <img src="images/fashion.jpeg">
+         </div>
+         <div class="contentBx">
+             <div>
+              <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">FASHION</p>
+              <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">Splendorista</h3>
+              <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">A virtual platform for fashion designers and photographers to showcase their creativity.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card">
+     <div class="box">
+         <div class="imgBx">
+             <img src="images/communication.jpeg">
+         </div>
+         <div class="contentBx">
+             <div>
+              <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">COMMUNICATION</p>
+              <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">The Communicator</h3>
+              <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">A platform to bring out the exceptional communication skills of the students in front of the world</p>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card">
+     <div class="box">
+         <div class="imgBx">
+             <img src="images/cc.jpeg">
+         </div>
+         <div class="contentBx">
+             <div>
+              <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">CORPORATE COMMUNICATION</p>
+              <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">Corporate </h3>
+              <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">India’s first platform providing database of cadidates screened on communication skills.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card">
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/music.jpeg">
+        </div>
+        <div class="contentBx">
+            <div>
+              <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">MUSIC</p>
+              <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">Aarohan </h3>
+              <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">A platform for upcoming performers in the field of entertainment to present their talent.</p>
+  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="box">
+        <div class="imgBx">
+            <img src="images/talk.jpeg">
+        </div>
+        <div class="contentBx">
+            <div>
+              <p style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">TALK SHOW</p>
+              <h3 style="font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">The Other Side </h3>
+              <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px;">India’s first talk show that provides a platform for the most successful professionals to showcase their other side.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:70px 20px" id="team">
+  <h3 class="w3-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold; font-size: 50px; color: aliceblue;">THE TEAM</h3>
+  <p class="w3-center w3-large" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 100px; color: white;">The ones who runs this company</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom" >
+      <div class="w3-card" style="width: 230px; height: 300px;  ">
+        <img src="images/av.jpeg" alt="John" style="width:100%" height="200px" width="100px" >
+        <div class="w3-container">
+          <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">MR. ABHISHEK VIDYABHANU</h3>
+          <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">AGM – Corporate Sales, Skoda</p>
+          <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" >
+      <div class="w3-card" style="width: 230px; height: 300px;">
+        <img src="images/rm.jpeg" alt="Jane" style="width:100%" height="200px" width="100px">
+        <div class="w3-container">
+          <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">MR. RANJAN
+            MITRA</h3>
+          <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">Senior Marketing Professional – Automotive</p>
+          
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card" style="width: 240px; height: 300px; ">
+        <img src="images/dn.jpeg" alt="Mike" style="width:100%" height="200px" width="100px">
+        <div class="w3-container">
+          <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">MR. DEWANG
+            NERALLA</h3>
+          <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">CEO – Atom Technologies</p>
+          
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card" style="width: 240px; margin-left: 20px;">
+        <img src="images/dr.jpg" alt="Dan" style="width:100%" height="200px" width="100px">
+        <div class="w3-container">
+          <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">DR. ANVITHA PRABHAKARA</h3>
+          <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">VP – Marketing & Strategy</p>
+          
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" >
+        <div class="w3-card" style="width: 220px; margin-left: 350px; ">
+          <img src="images/hb.jpeg" alt="Jane" style="width:100%" height="200px" width="100px">
+          <div class="w3-container">
+            <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">MR. HIMANIL
+              BOSE</h3>
+            <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">Country Manager – XOPAI, London</p>
+           
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom" >
+        <div class="w3-card" style="width: 225px; margin-left: 369px; ">
+          <img src="images/t6.jpeg" alt="Jane" style="width:100%" height="200px" width="100px">
+          <div class="w3-container">
+            <h3 style="font-family: 'Courier New', Courier, monospace; color: white; font-weight: bold; font-size: 20px;">MR. SWAPNIL
+              PINGALE</h3>
+            <p class="w3-opacity" style="color: white; font-size: 15px; font-family: 'Courier New', Courier, monospace;">Senior Category Manager, GEP Worldwide</p>
+           
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+
+
+<!-- Work Section -->
+<h1 style="color: white; font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; font-size: 50px;" id="campus">Would You Like
+  To Be A Part Of This Powerful Team ?</h1>
+<div class="row">
+    <div class="col">
+        <p style="color: white;">We would like to welcome young, energetic and enthusiastic college students to be the face of their campus and represent our brand in the  campus.</p>
+        <h3 style="color: white; font-weight: bold;">As a Campus Ambassador You WIll Be Holding Responsibilities like:</h3>
+        <p style="color: white;">1. Spread awareness about Craftin Images and our events in your campus<br>
+           2. Develop strategic collaborations with other institutions, and brands<br>
+           3. Curating and implementing various kinds marketing ideas to promote
+            our brand in your campus<br>
+           4. Promoting our brand through social media<br>
+           5. Organize various workshops and small events on campus to grow the
+            on ground presence of our brand<br>
+           6. Coordinate with our team to organise webinars for the students
+            Perform daily, weekly and monthly tasks<br>
+            Finally ENJOY your journey with us !
+        </p>
+        <h3 style="color: white;font-weight: bold;">What’s In It For You </h3>
+        <p style="color: white;"> 1. Certificate of Internship<br>
+           2. Work handheld by a team of experts<br>
+           3. Get corporate exposure<br>
+           4. Revenue share based on 
+           performance<br>
+           5. Free access to exclusive learning webinars<br>
+           6.Free merchandise from the company<br>
+           7. Opportunity to interact with brands<br>
+           8. Lots of learning<br> 
+            Best of all – You get a career map laid out for you ! 
+            Best performers will be further rewarded based on points</p>
+        
+    </div>
+    <div class="col">
+        
+        <div class="card1 card2">
+            <h5 style="color: rgb(238, 9, 9); font-weight: bolder; font-size: 20px;">Team Leader</h5>
+        </div>
+        <div class="card1 card3">
+            <h5 style="color: rgb(238, 9, 9); font-weight: bolder; font-size: 20px;">City <Head></Head></h5>
+        </div>
+        <div class="card1 card4">
+            <h5 style="color: rgb(238, 9, 9); font-weight: bolder; font-size: 20px;">Partner With Us</h5>
+        </div>
+        <div class="card1 card5">
+            <h5 style="color: rgb(238, 9, 9); font-weight: bolder; font-size: 20px;">Ambassador</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<!-- <div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Pricing Section -->
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> MUMBAI, MAHARASHTRA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9167318681</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mohan@craftinimages.in</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+</div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
